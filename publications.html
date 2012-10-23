@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <title>Colin Scott</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Colin Scott's projects and publications">
+    <meta name="author" content="Colin Scott">
+    <meta name="keywords" content="Colin Scott, Berkeley, UW, Computer Science,
+    SDN, software-defined networks, troubleshooting, reverse traceroute, Scott
+    Shenker">
 
     <!-- Le styles -->
     <link href="./docs/assets/css/bootstrap.css" rel="stylesheet">
@@ -27,7 +30,15 @@
       })();
     </script>
 
-
+    <script src="js/showhide.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('.show_hide').showHide({
+    speed: 0,
+    changeText: 0,
+    });
+    });
+    </script>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -68,55 +79,60 @@
     </div>
 
     <div class="container">
-<pre>
-@techreport{Hasan:EECS-2012-201,
-    Author = {Hasan, Shaddi and Ben David, Yahel and Scott, Robert Colin and Brewer, Eric and Shenker, Scott},
-    Title = {Enabling Rural Connectivity with SDN},
-    Institution = {EECS Department, University of California, Berkeley},
-    Year = {2012},
-    URL = {http://www.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-201.html},
-    Abstract = {The Software-Defined Networking (SDN) paradigm is typically applied to data center and enterprise networks. We argue that SDN is also promising for rural wireless networks, especially those in developing regions. Operating a rural network in the developing world means coping with unpredictability, low profit margins, and resource constraints; the increased flexibility and simplified management that software-defined networks provide are a major benefit in this context. Network virtualization, also enabled by SDN, would allow rural networks to operate as infrastructure providers to existing ISPs, thus enabling cooperation rather than competition with powerful incumbent providers.}
-}
-
-@inproceedings{Sherry:2012:MMS:2342356.2342359,
- author = {Sherry, Justine and Hasan, Shaddi and Scott, Colin and Krishnamurthy, Arvind and Ratnasamy, Sylvia and Sekar, Vyas},
- title = {Making middleboxes someone else's problem: network processing as a cloud service},
- series = {SIGCOMM '12},
- url = {http://www.cs.berkeley.edu/~justine/fp150-sherry.pdf},
- year = {2012}
-}
-
-@inproceedings{Katz-Bassett:2012:LPR:2377677.2377756,
- author = {Katz-Bassett, Ethan and Scott, Colin and Choffnes, David R. and Cunha, \'{I}talo and Valancius, Vytautas and Feamster, Nick and Madhyastha, Harsha V. and Anderson, Thomas and Krishnamurthy, Arvind},
- title = {LIFEGUARD: practical repair of persistent route failures},
- url = {http://lifeguard.cs.washington.edu},
- series = {SIGCOMM '12},
- year = {2012},
-}
-
-@inproceedings{Katz-Bassett:2011:MRI:2070562.2070573,
- author = {Katz-Bassett, Ethan and Choffnes, David R. and Cunha, \'{I}talo and Scott, Colin and Anderson, Thomas and Krishnamurthy, Arvind},
- title = {Machiavellian routing: improving internet availability with BGP poisoning},
- url = {http://lifeguard.cs.washington.edu},
- series = {HotNets '11},
- year = {2011},
-}
-
-@inproceedings{Katz-Bassett:2010:RT:1855711.1855726,
- author = {Katz-Bassett, Ethan and Madhyastha, Harsha V. and Adhikari, Vijay Kumar and Scott, Colin and Sherry, Justine and Van Wesep, Peter and Anderson, Thomas and Krishnamurthy, Arvind},
- title = {Reverse traceroute},
- url = {http://www.cs.washington.edu/research/networking/astronomy/reverse-traceroute.html},
- series = {NSDI'10},
- year = {2010}
-}
-
-@techreport{colin-thesis,
-  Author = {Colin Scott},
-  URL = {ftp://ftp.cs.washington.edu/tr/2012/05/UW-CSE-12-05-01.PDF},
-  Institution = {University of Washington Senior Thesis},
-  Title = {{LIFEGUARD}: {L}ocating {I}nternet {F}ailures {E}ffectively and {G}enerating {U}sable {A}lternate {R}outes {D}ynamically},
-  Year = {2011}
-}
+    <h3>In Progress</h3>
+    <ul>
+      <li><a href="http://www.eecs.berkeley.edu/~rcs/research/sts.pdf">Selective
+      Recall</a> is our project on troubleshooting software-defined networks.
+      Our <a href="http://ucb-sts.github.com/sts/">tool</a> is publicly
+      available.
+      </li>
+    </ul>
+    <h3>Conference Papers</h3>
+    <ul>
+        <li><a href="http://lifeguard.cs.washington.edu">LIFEGUARD: practical
+            repair of persistent route failures</a></br>
+        Ethan Katz-Bassett, Colin Scott, David R. Choffnes, Italo Cunha, Vytautas
+        Valancius, Nick Feamster, Harsha V. Madhyastha, Thomas Anderson, Arvind
+        Krishnamurthy </br>
+        SIGCOMM 2012 </br>
+        </li>
+        <li><a href="http://www.cs.berkeley.edu/~justine/fp150-sherry.pdf">Making middleboxes someone else's problem: network processing as a cloud service</a></br>
+        Justine Sherry, Shaddi Hasan, Colin Scott, Arvind Krishnamurthy, Sylvia Ratnasamy, Vyas Sekar</br>
+        SIGCOMM 2012 </br>
+        </li>
+        <li><a href="http://www.cs.washington.edu/research/networking/astronomy/reverse-traceroute.html">Reverse traceroute</a></br>
+        Ethan Katz-Bassett,  Harsha V. Madhyastha, Vijay Kumar Adhikari, Colin Scott, Justine Sherry, Peter Van Wesep, Thomas Anderson, Arvind Krishnamurthy</br>
+        NSDI 2010 </br>
+        <em>Best Paper Award</em></br>
+        </li>
+    </ul>
+    <h3>Workshop Papers</h3>
+    <ul>
+       <li><a href="http://lifeguard.cs.washington.edu">Machiavellian Routing: Improving Internet Availability with BGP Poisoning</a></br>
+       Ethan Katz-Bassett, David R. Choffnes, Italo Cunha, Colin Scott,  Thomas Anderson,  Arvind Krishnamurthy</br>
+       HotNets 2011</br>
+       </li>
+    </ul>
+    <h3>Tech Reports</h3>
+    <ul>
+       <li><a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-201.html">Enabling Rural Connectivity with SDN</a></br>
+       Shaddi Hasan, Yahel Ben David, Colin Scott,  Eric Brewer,  Scott
+       Shenker</br>
+       UCB EECS 2012</br>
+       </li>
+    </ul>
+    <h3>Theses</h3>
+    <ul>
+       <li><a href="ftp://ftp.cs.washington.edu/tr/2012/05/UW-CSE-12-05-01.PDF">LIFEGUARD: Locating Internet Failures Effectively and Generating Usable Alternate Routes Dynamically</a></br>
+       Colin Scott</br>
+       UW CSE Senior Thesis 2011</br>
+       <em>Best Senior Thesis Award</em></br>
+       </li>
+    </ul>
+    <h3>BibTex</h3>
+    <ul>
+    <li><a href="./colin.bib">Download</a></li>
+    </ul>
 </pre>
     </div> <!-- /container -->
 
