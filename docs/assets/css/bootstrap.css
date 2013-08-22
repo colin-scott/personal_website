@@ -5219,3 +5219,6 @@ i[class^="icon-"] {
 .affix {
   position: fixed;
 }
+.rightborder {
+      border-right: 1px solid;
+}

@@ -1,1 +1,3 @@
  - Abstracts (buttons?)
+ - Make right column white, same color as navbar.
+ - Move last two modficiation to bootstrap.css out to my own css file.
