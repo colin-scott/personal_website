@@ -1,206 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Colin Scott</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Colin Scott's projects and publications">
-    <meta name="author" content="Colin Scott">
-    <meta name="keywords" content="Colin Scott, Berkeley, UW, Computer Science,
-    SDN, software-defined networks, troubleshooting, reverse traceroute, Scott
-    Shenker">
+---
+layout: default
+title: Colin Scott
+navbar: publications
+description: "Colin Scott's projects and publications"
+---
 
-    <!-- Le styles -->
-    <link href="./docs/assets/css/bootstrap.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <link href="./docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-29849261-1']);
-      _gaq.push(['_trackPageview']);
+<h3>In Progress</h3>
+<ul>
+  <li><a href="http://www.eecs.berkeley.edu/~rcs/research/sts.pdf">STS
+  </a> is our project on troubleshooting software-defined networks.
+  Our <a href="http://ucb-sts.github.com/sts/">tool</a> is publicly
+  available. Slides from my BigSwitch tech talk / Stanford CTO summit
+  presentation are
+  available <a href="http://www.eecs.berkeley.edu/~rcs/research/selectiverecall.pptx">here</a>.
+  A six page version of our paper draft is also available <a
+  href="http://www.eecs.berkeley.edu/~rcs/research/sts_short.pdf">here</a>.
+  </li>
+</ul>
+<h3>Conference Papers</h3>
+<ul>
+    <li><a href="http://lifeguard.cs.washington.edu">LIFEGUARD: Practical
+        Repair of Persistent Route Failures</a></br>
+    Ethan Katz-Bassett, Colin Scott, David R. Choffnes, Italo Cunha, Vytautas
+    Valancius, Nick Feamster, Harsha V. Madhyastha, Thomas Anderson, Arvind
+    Krishnamurthy </br>
+    SIGCOMM 2012 </br>
+    </li>
+    <li><a href="http://www.cs.berkeley.edu/~justine/fp150-sherry.pdf">Making Middleboxes Someone Else's Problem: Network Processing as a Cloud Service</a></br>
+    Justine Sherry, Shaddi Hasan, Colin Scott, Arvind Krishnamurthy, Sylvia Ratnasamy, Vyas Sekar</br>
+    SIGCOMM 2012 </br>
+    </li>
+    <li><a href="http://www.cs.washington.edu/research/networking/astronomy/reverse-traceroute.html">Reverse Traceroute</a></br>
+    Ethan Katz-Bassett,  Harsha V. Madhyastha, Vijay Kumar Adhikari, Colin Scott, Justine Sherry, Peter Van Wesep, Thomas Anderson, Arvind Krishnamurthy</br>
+    NSDI 2010 </br>
+    <b>Best Paper Award</b></br>
+    </li>
+</ul>
+<h3>Brief Announcements</h3>
+<ul>
+    <li><a href="http://www.eecs.berkeley.edu/~rcs/research/podc13.pdf">Brief Announcement: Techniques for Programmatically Troubleshooting
+    Distributed Systems</a></br>
+    Sam Whitlock, Colin Scott, Scott Shenker</br>
+    To Appear in PODC 2013</br>
+    </li>
+</ul>
+<h3>Workshop Papers</h3>
+<ul>
+   <li><a href="http://www.eecs.berkeley.edu/~rcs/research/cap-paper.pdf">CAP for Networks</a></br>
+   Aurojit Panda, Colin Scott, Ali Ghodsi, Teemu Koponen, Scott Shenker</br>
+   To Appear in HotSDN 2013
+   </li>
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+   <li><a href="http://www.eecs.berkeley.edu/~rcs/research/vision-paper.pdf">Leveraging SDN Layering to Systematically Troubleshoot
+                 Networks</a></br>
+   Brandon Heller, Colin Scott, Nick Mckeown, Scott. Shenker, Andreas Wundsam,
+     Hongyi Zeng, Sam Whitlock, Vimal Jeyakumar, Nikhil Handigol, Murphy McCauley,
+     Kyriakos Zarifis, Peyman Kazemian<br/>
+   To Appear in HotSDN 2013
+   </li>
 
-    <script src="js/showhide.js" type="text/javascript"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-    $('.show_hide').showHide({
-    speed: 0,
-    changeText: 0,
-    });
-    });
-    </script>
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="http://cryptm.org/~hpb/images/C.favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./docs/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./docs/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./docs/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="./docs/assets/ico/apple-touch-icon-57-precomposed.png">
-  </head>
-
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="./index.html">Colin Scott</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-              <li class="active"><a href="./publications.html">Publications</a></li>
-              <li><a href="http://colin-scott.github.com/">Blog</a></li>
-              <li><a href="./life.html">Life</a></li>
-              <li><a href="http://colin-scott.github.com/music">Music</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-        <div class="row-fluid">
-            <div class="span9 rightborder">
-    <h3>In Progress</h3>
-    <ul>
-      <li><a href="http://www.eecs.berkeley.edu/~rcs/research/sts.pdf">STS
-      </a> is our project on troubleshooting software-defined networks.
-      Our <a href="http://ucb-sts.github.com/sts/">tool</a> is publicly
-      available. Slides from my BigSwitch tech talk / Stanford CTO summit
-      presentation are
-      available <a href="http://www.eecs.berkeley.edu/~rcs/research/selectiverecall.pptx">here</a>.
-      A six page version of our paper draft is also available <a
-      href="http://www.eecs.berkeley.edu/~rcs/research/sts_short.pdf">here</a>.
-      </li>
-    </ul>
-    <h3>Conference Papers</h3>
-    <ul>
-        <li><a href="http://lifeguard.cs.washington.edu">LIFEGUARD: Practical
-            Repair of Persistent Route Failures</a></br>
-        Ethan Katz-Bassett, Colin Scott, David R. Choffnes, Italo Cunha, Vytautas
-        Valancius, Nick Feamster, Harsha V. Madhyastha, Thomas Anderson, Arvind
-        Krishnamurthy </br>
-        SIGCOMM 2012 </br>
-        </li>
-        <li><a href="http://www.cs.berkeley.edu/~justine/fp150-sherry.pdf">Making Middleboxes Someone Else's Problem: Network Processing as a Cloud Service</a></br>
-        Justine Sherry, Shaddi Hasan, Colin Scott, Arvind Krishnamurthy, Sylvia Ratnasamy, Vyas Sekar</br>
-        SIGCOMM 2012 </br>
-        </li>
-        <li><a href="http://www.cs.washington.edu/research/networking/astronomy/reverse-traceroute.html">Reverse Traceroute</a></br>
-        Ethan Katz-Bassett,  Harsha V. Madhyastha, Vijay Kumar Adhikari, Colin Scott, Justine Sherry, Peter Van Wesep, Thomas Anderson, Arvind Krishnamurthy</br>
-        NSDI 2010 </br>
-        <b>Best Paper Award</b></br>
-        </li>
-    </ul>
-    <h3>Brief Announcements</h3>
-    <ul>
-        <li><a href="http://www.eecs.berkeley.edu/~rcs/research/podc13.pdf">Brief Announcement: Techniques for Programmatically Troubleshooting
-        Distributed Systems</a></br>
-        Sam Whitlock, Colin Scott, Scott Shenker</br>
-        To Appear in PODC 2013</br>
-        </li>
-    </ul>
-    <h3>Workshop Papers</h3>
-    <ul>
-       <li><a href="http://www.eecs.berkeley.edu/~rcs/research/cap-paper.pdf">CAP for Networks</a></br>
-       Aurojit Panda, Colin Scott, Ali Ghodsi, Teemu Koponen, Scott Shenker</br>
-       To Appear in HotSDN 2013
-       </li>
-
-       <li><a href="http://www.eecs.berkeley.edu/~rcs/research/vision-paper.pdf">Leveraging SDN Layering to Systematically Troubleshoot
-                     Networks</a></br>
-       Brandon Heller, Colin Scott, Nick Mckeown, Scott. Shenker, Andreas Wundsam,
-         Hongyi Zeng, Sam Whitlock, Vimal Jeyakumar, Nikhil Handigol, Murphy McCauley,
-         Kyriakos Zarifis, Peyman Kazemian<br/>
-       To Appear in HotSDN 2013
-       </li>
-
-       <li><a href="http://lifeguard.cs.washington.edu">Machiavellian Routing: Improving Internet Availability with BGP Poisoning</a></br>
-       Ethan Katz-Bassett, David R. Choffnes, Italo Cunha, Colin Scott,  Thomas Anderson,  Arvind Krishnamurthy</br>
-       HotNets 2011</br>
-       </li>
-    </ul>
-    <h3>Tech Reports</h3>
-    <ul>
-       <li><a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-201.html">Enabling Rural Connectivity with SDN</a></br>
-       Shaddi Hasan, Yahel Ben David, Colin Scott,  Eric Brewer,  Scott
-       Shenker</br>
-       UCB EECS 2012</br>
-       </li>
-    </ul>
-    <h3>Theses</h3>
-    <ul>
-       <li><a href="ftp://ftp.cs.washington.edu/tr/2012/05/UW-CSE-12-05-01.PDF">LIFEGUARD:
-       Locating Internet Failures Effectively and Generating Usable Alternate
-       Routes Dynamically</a> [<a href="./senior_thesis.pptx">slides</a>]</br>
-       Colin Scott</br>
-       UW CSE Senior Thesis 2011</br>
-       <b>Best Senior Thesis Award</b></br>
-       </li>
-    </ul>
-    <h3>BibTex</h3>
-    <ul>
-    <li><a href="./colin.bib">Download</a></li>
-    </ul>
-    <h3>Classwork</h3>
-    <ul>
-      <li>Programming Languages Project:
-      <a
-      href="http://www.eecs.berkeley.edu/~rcs/classes/pl.pdf">Correspondence
-      Checking for Computer Networks.</a>
-      </li>
-      <li>Distributed Systems
-      Paper Review: <a href="http://www.eecs.berkeley.edu/~rcs/classes/dist_sys.pdf">Knowledge and Common Knowledge in
-      a Distributed Environment.</a></li>
-      <li>Information and Communications Technology For The Developing World
-      Project:
-      <a href="http://www.eecs.berkeley.edu/~rcs/classes/ictd.pdf">Does Broadband Internet Access Actually Spur Economic Growth?</a></li>
-      <li>Network Security Project:
-      <a href="http://www.eecs.berkeley.edu/~rcs/classes/netsec.pdf">Accounting for Variation in Spam Effectiveness.</a>
-      </li>
-    </ul>
-</pre>
-
-</div> <!--class="span9"-->
-<div class="span3 darker"></div>
-</div><!--class="row-fluid"-->
-    </div> <!-- /container -->
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./docs/assets/js/jquery.js"></script>
-    <script src="./docs/assets/js/bootstrap-transition.js"></script>
-    <script src="./docs/assets/js/bootstrap-alert.js"></script>
-    <script src="./docs/assets/js/bootstrap-modal.js"></script>
-    <script src="./docs/assets/js/bootstrap-dropdown.js"></script>
-    <script src="./docs/assets/js/bootstrap-scrollspy.js"></script>
-    <script src="./docs/assets/js/bootstrap-tab.js"></script>
-    <script src="./docs/assets/js/bootstrap-tooltip.js"></script>
-    <script src="./docs/assets/js/bootstrap-popover.js"></script>
-    <script src="./docs/assets/js/bootstrap-button.js"></script>
-    <script src="./docs/assets/js/bootstrap-collapse.js"></script>
-    <script src="./docs/assets/js/bootstrap-carousel.js"></script>
-    <script src="./docs/assets/js/bootstrap-typeahead.js"></script>
-  </body>
-</html>
+   <li><a href="http://lifeguard.cs.washington.edu">Machiavellian Routing: Improving Internet Availability with BGP Poisoning</a></br>
+   Ethan Katz-Bassett, David R. Choffnes, Italo Cunha, Colin Scott,  Thomas Anderson,  Arvind Krishnamurthy</br>
+   HotNets 2011</br>
+   </li>
+</ul>
+<h3>Tech Reports</h3>
+<ul>
+   <li><a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-201.html">Enabling Rural Connectivity with SDN</a></br>
+   Shaddi Hasan, Yahel Ben David, Colin Scott,  Eric Brewer,  Scott
+   Shenker</br>
+   UCB EECS 2012</br>
+   </li>
+</ul>
+<h3>Theses</h3>
+<ul>
+   <li><a href="ftp://ftp.cs.washington.edu/tr/2012/05/UW-CSE-12-05-01.PDF">LIFEGUARD:
+   Locating Internet Failures Effectively and Generating Usable Alternate
+   Routes Dynamically</a> [<a href="./senior_thesis.pptx">slides</a>]</br>
+   Colin Scott</br>
+   UW CSE Senior Thesis 2011</br>
+   <b>Best Senior Thesis Award</b></br>
+   </li>
+</ul>
+<h3>BibTex</h3>
+<ul>
+<li><a href="./colin.bib">Download</a></li>
+</ul>
+<h3>Classwork</h3>
+<ul>
+  <li>Programming Languages Project:
+  <a
+  href="http://www.eecs.berkeley.edu/~rcs/classes/pl.pdf">Correspondence
+  Checking for Computer Networks.</a>
+  </li>
+  <li>Distributed Systems
+  Paper Review: <a href="http://www.eecs.berkeley.edu/~rcs/classes/dist_sys.pdf">Knowledge and Common Knowledge in
+  a Distributed Environment.</a></li>
+  <li>Information and Communications Technology For The Developing World
+  Project:
+  <a href="http://www.eecs.berkeley.edu/~rcs/classes/ictd.pdf">Does Broadband Internet Access Actually Spur Economic Growth?</a></li>
+  <li>Network Security Project:
+  <a href="http://www.eecs.berkeley.edu/~rcs/classes/netsec.pdf">Accounting for Variation in Spam Effectiveness.</a>
+  </li>
+</ul>
