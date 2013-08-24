@@ -1,0 +1,126 @@
+- 70% of the world's population lives without Internet
+  connectivity, mostly in rural regions. (Even in the United States! 30% of
+  Americans don't have Internet access)
+
+- Network connectivity is an excellent catalyst for economic + societal development.
+
+- We observe that there exists little incentive to deploy networks in
+  rural areas. At least two reasons:
+
+   i.) Return on investment (ROI) is quite low for companies interested in
+      expanding into rural areas. In particular:
+
+      - CapEx is high: radio towers, antennas, solar panels, satellite links,
+        etc. are relatively expensive
+
+      - OpEx is high: managing network devices requires a high degree of technical
+        expertise. Very few people have the skills, and those that do demand high
+        pay. Moreover, companies have to invest much more in salesman catering to
+        rural populations, since locals are slow to trust suits from the city with
+        whom they aren't acquainted. // Moreover, retention is low: you can't simply
+        // teach locals the requisite skills, since they will often just leave to
+        // earn city wages elsewhere. 
+
+      - Rural populations don't have much buying power.
+
+      - Incumbent ISPs have bigger fish to fry: ROI is significantly higher in
+        bigger markets, ISPs are focused on maximizing their profits => little
+        interest
+
+   ii.) Local entrepreneurs (who are trusted by their community, and highly
+         motivated to obtain connectivity) are inhibited from deploying their own networks: 
+
+       - Competition with incumbent ISPs crushes small businesses: initially entrepreneurs
+         buy Internet connectivity from ISPs in the city -- as soon as you or your provider
+         expand, you start competing for customers. This is a /very bad/
+         business model => small businesses won't survive
+
+       - As soon as they obtain customers, governmental regulations and customer
+         expectations force them to start acting like an ISP:
+         need TE, address allocation, caching, filtering, accounting, customer
+         support, strict bookkeeping, etc.. These services are really hard
+         to manage! Several of them also require expensive middleboxes.
+
+ - We observe that trends in technology are bringing down CapEx requirements
+   substantially (cf. dozens of papers on better MAC protocols for long-distance
+   wifi, or AirJaldi using mountains rather than expensive radio towers.)
+
+ - We argue that two technologies can be used to i.) significantly reduce OpEx
+   and ii.) enable local entrepreneurs to deploy their own networks. In
+   particular:
+
+     * Software-defined networking (SDN) is a new network architecture
+       designed to make management easy. [TBD: describe SDN in more depth]
+       
+       With SDN, it should be possible to make deploying networks /as easy/ as plugging
+       in a home router: just point an antenna, and it should work. To make
+       changes to the network, locals would feasibly only need to know how to click a
+       button in a simple GUI. Monitoring, TE, routing, etc. could be handled in
+       an automated fashion. 
+
+     * Virtual circuits (VCs) would allow a decoupling of /network connectivity/
+       from /network services/. Entrepreneurs could simply deploy access links.
+       Customers would be given a /choice/ of which ISP in the city to buy Internet
+       connectivity from; their traffic would then be transported transparently
+       through a VC on the access link. The ISP would then handle the complex network
+       services, and pay the entrepreneur for access to the customers. 
+
+       // VCs also provide QOS guarantees, performance isolation, and
+       // security isolation between customers sharing the network.       
+
+ - It's not at all clear that these technologies will be sufficient!
+     i.) SDN was perfected for the datacenter environment. Rural networks are a
+      /radically/ different setting:
+        * unreliable connectivity => controller will not be able to speak to
+          the network devices at all times
+        * WAN implies high latency between controller + routers => may not be
+          able to react quickly enough to handle traffic spikes, etc.
+        * The controller potentially has many more responsibilities than it
+          would in the datacenter environment, with multiple WANs to manage,
+          multiple tenants per network, highly dynamic workloads
+        * Not immediately apparent that cheap wireless routers can support
+          virtual circuits. Nor is it clear that the OpenFlow protocol
+          suffices.
+        * Need sophisticated monitoring capabilities so that when
+          something goes wrong, the entrepreneur can immediately tell whether
+          the problem is in his/her network or the ISP's.
+
+     ii.) Not clear that SDN can enable /fully automated/ network management:
+         * Although SDN clearly makes network management easier, it still
+            requires technical expertise for both development and operation.
+         * From an HCI perspective, not clear what primitives should be
+           exposed on a management GUI
+
+=================================================================================
+Intellectual Merit:
+   - We're pushing SDN to its limits along two dimensions:
+      * Doubtful that network management can be made /completely/
+        automated... need new controller hierarchies, abstractions
+        for multi-tenancy, etc., before we get there. 
+
+      * The deployment environment is very tough compared to
+        datacenters... forcing ourselves to deal with unreliable links, high latency,
+        etc. would teach us a lot about how to build SDNs
+
+   - Not much previous research in this area! Most of the SDN focus has been on
+     making /datacenter/ networks easier to manage -- not rural, resource
+     constrained networks. 
+
+Broader impact:
+   - Sustainable business model enables deployment across the world, even in
+     the U.S.!
+   - Network connectivity obviously brings about positive educational, economic,
+     societal changes.
+   - The work fundamentally involves collaboration -- between network
+     researchers, locals "on the ground", HCI researchers, etc. 
+   - Need to communicate the results to technical and non-technical people
+     around the world in order to get it adopted!
+=================================================================================
+TODO: 
+  - literature survey on existing solutions
+  - sketch out my proposed solutions the specific technical problems
+  - enumerate expected results of research
+  - How does this fit into the broader fields of networking and ICTD? Is this
+    work `transformative'?
+  - Inject and italicize specific keywords from the prompt. 
+  - Diagrams?

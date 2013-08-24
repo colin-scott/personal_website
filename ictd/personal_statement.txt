@@ -1,0 +1,78 @@
+ - High level takeaway: I harbor a strong desire to positively impact society.
+   Computer science grad school is the best environment for affecting change on
+   the world. It's also the best place to grow as a person.
+
+   Subtext: I understand /why/ I do what I do. I understand /why/ the status
+   quo is the way it is. I think hard about which problems are important and
+   which are not. I have a vision for how we should tackle the important problems.
+   
+  - Specifically:
+
+< Why I'm in grad school >
+    * Computer science is an extremely important field. Its influence on
+      society is indisputable. It has huge potential for developing regions.
+
+    * I'm a technically-minded person. People are most successful at what
+      they're good at => CS is the best way for me to have an impact. 
+       
+    * Grad school affords you time and freedom, which is exactly what you need
+      to come up with solutions to important problems.
+
+    * I want to improve my skills. Surrounding myself by people smarter than
+      me, and forcing myself to learn how to write, read, talk, etc, is
+      the best way for me to do that. I've learned a tremendous amount in grad
+      school, and I'm only 2 months in!
+
+    * Berkeley in particular is very strong in both networking and ICTD.
+
+< Evidence that I want to have impact >
+
+    * Mentoring younger students (Finn, Henry, Dustin, Mary, Steve, Jesse,
+      ...) is very satisfying to me. Sitting in my office and working alone
+      for weeks on end does not suffice for my satisfaction.
+
+    * Related: I have a desire to share my positive experiences with other
+      students, evidenced by serving as a panelist at undergraduate research
+      night. 
+
+    * My trip to South America was (partly) motivated by a desire to get a better sense of
+      the problems affecting people outside the USA. Lots of stories to be
+      told here.
+      
+    * Similarly, I was (partly) motivated to do an AWS internship in order to get a
+      better sense of the problems that real engineers deal with.
+
+   * My strength is in /asking questions/ and talking to other people, (not
+     necessarily having a broad vision for how the world should be). 
+     Plenty of stories to be told: asking other people questions about the
+     problems they face, and being totally exhilarated when I helped them
+     develop a solution to it.
+
+    * Saw first hand the problems faced by people in South America, and
+      technology's potential to help solve them.
+
+    * I plan to disseminate ideas through blogging, teaching, etc. 
+
+    * Related: I helped create a group of other UW undergrads interested in research.
+      Goal was to talk about our research to others, practice communicating
+      results, brainstorm with others, etc. 
+
+    * I have a strong need to do whatever it takes to solve a problem
+
+=================================================================================
+Intellectual Merit:
+  - I clearly think hard about justifying my choices. 
+  - I'm a technically-minded person, and I consciously chose to leverage this
+    strength.
+  - I'm highly independent.
+
+Broader impact:
+  - I have a desire to teach, collaborate, do work that is meaningful to others
+  - I'm cognizant of how my work fits into the broader picture. I consciously
+    /choose/ the problems I work on based on how important I believe they
+    are. 
+=================================================================================
+TODO: 
+  - specific anecdote(s) that get my point across.
+  - less bullshit
+  - less laundry-list

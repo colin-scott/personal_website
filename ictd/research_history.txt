@@ -1,0 +1,51 @@
+ - High level point: I have a lot of experience debugging
+   networks. This gave me a deep understanding of how complicated network
+   management can be, and the need to make it automated for local
+   entrepreneurs. 
+   
+   Subtext: I'm a mature(ing) researcher.
+
+ - Specifically:
+    * Working on reverse traceroute gave me the technical expertise needed
+      to build large systems. This (helped) lead to an NSDI best paper, as well
+      as the Gary Kildall departmental scholarship.
+
+    * Working on LIFEGUARD taught me how to do independent research (asking the
+      right questions, the importance of collaboration, how to run
+      experiments, the importance of data, how to present results orally and
+      on paper). This led to a CRA honorable mention and a best
+      senior thesis award. LIFEGUARD is also a major component of our HotNets
+      publication and NSDI submission.
+
+    * Internship at Amazon taught me the importance of communicating with
+      /users/ in order to identify important problems. Also taught me the
+      value of getting feedback from peers.
+
+    * Current project on debugging software-defined networks gives me a fairly
+      in-depth understanding of the technology, especially its potential
+      benefits and shortcomings.
+
+    * Trip to South America (and Europe?) taught me a huge amount about
+      cultural values => helped rid myself of naivete about development and
+      technology.
+
+    * I've given several talks in the past, in both academia and in industry.
+      I learned that giving a good talk is HARD! And really important!
+
+    * ...
+
+=================================================================================
+Intellectual Merit:
+   - Lots of technical contributions in the past
+   - Clearly know /how/ to do research
+
+Broader impact:
+   - A common theme of my research (learned from Ethan) is that it's crucial
+     to find problems that are well motivated. Network operators
+     care about reverse traceroute. Billions of under-privileged people care
+     about network connectivity.
+=================================================================================
+TODO:
+   - How did these experiences lead me to the realization of my research
+     proposal? (Or rather, how did these experiences lead me to the realization
+     of technical contributions of Yahel's problem?)
