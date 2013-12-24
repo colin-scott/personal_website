@@ -1,3 +1,3 @@
 push:
 	jekyll build
-	scp _site/*html _site/*bib rcs@login.eecs.berkeley.edu:~/public_html/
+	scp build/*html build/*bib rcs@login.eecs.berkeley.edu:~/public_html/
