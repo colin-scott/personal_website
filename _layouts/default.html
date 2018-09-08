@@ -2,129 +2,125 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="{{page.description}}">
-        <meta name="author" content="Colin Scott">
-        <meta name="keywords" content="Colin Scott, Berkeley, UW, Computer Science,
-        SDN, software-defined networks, troubleshooting, reverse traceroute, Scott
-        Shenker">
-        <title>{{ page.title }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <meta name="description" content="{{page.description}}">
+    <meta name="author" content="Colin Scott">
+    <meta name="keywords" content="Colin Scott, Berkeley, UW, Computer Science,
+    SDN, software-defined networks, ICTD, India, Network Access">
+    <title>{{ page.title }}</title>
 
-        <!-- Le styles -->
-        <link href="./assets/css/bootstrap.css" rel="stylesheet">
-        <style>
-          body {
-            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-          }
-        </style>
-        <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
-        <script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-29849261-1']);
-          _gaq.push(['_trackPageview']);
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
 
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-        </script>
+    <style>
+        body {
+          padding-bottom: 20px;
+        }
 
-        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+        .navbar {
+          margin-bottom: 20px;
+        }
+    </style>
 
-        <!-- Le fav and touch icons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
-    </head>
-    <body>
-      <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="./index.html">Colin Scott</a>
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <!-- These conditionals are super ugly. See
-                https://github.com/shopify/liquid/wiki/liquid-for-designers
-                to figure out a better way to do this.
-                -->
-                {% if page.navbar == "index" %}
-                <li class="active">
-                {% else %}
-                <li>
-                {% endif %}
-                  <a href="./index.html">Home</a>
-                </li>
-                {% if page.navbar == "about" %}
-                <li class="active">
-                {% else %}
-                <li>
-                {% endif %}
-                  <a href="./about.html">About</a>
-                </li>
-                {% if page.navbar == "contact" %}
-                <li class="active">
-                {% else %}
-                <li>
-                {% endif %}
-                  <a href="./contact.html">Contact</a>
-                </li>
-                {% if page.navbar == "publications" %}
-                <li class="active">
-                {% else %}
-                <li>
-                {% endif %}
-                  <a href="./publications.html">Publications</a>
-                </li>
-                <li>
-                  <a href="https://colin-scott.github.com/">Blog</a>
-                </li>
-                {% if page.navbar == "life" %}
-                <li class="active">
-                {% else %}
-                <li>
-                {% endif %}
-                  <a href="./life.html">Life</a>
-                </li>
-                <li>
-                  <a href="https://colin-scott.github.com/music/">Music</a>
-                </li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
-        </div>
-      </div>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-29849261-1']);
+      _gaq.push(['_trackPageview']);
 
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+  <body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        {{ content }}
-      </div> <!-- /container -->
+        <a class="navbar-brand" href="./index.html">Colin Scott</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Le javascript
-      ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="./assets/js/jquery.js"></script>
-      <script src="./assets/js/bootstrap-transition.js"></script>
-      <script src="./assets/js/bootstrap-alert.js"></script>
-      <script src="./assets/js/bootstrap-modal.js"></script>
-      <script src="./assets/js/bootstrap-dropdown.js"></script>
-      <script src="./assets/js/bootstrap-scrollspy.js"></script>
-      <script src="./assets/js/bootstrap-tab.js"></script>
-      <script src="./assets/js/bootstrap-tooltip.js"></script>
-      <script src="./assets/js/bootstrap-popover.js"></script>
-      <script src="./assets/js/bootstrap-button.js"></script>
-      <script src="./assets/js/bootstrap-collapse.js"></script>
-      <script src="./assets/js/bootstrap-carousel.js"></script>
-      <script src="./assets/js/bootstrap-typeahead.js"></script>
-    </body>
+        <div class="navbar-collapse collapse" id="mynavbar">
+          <ul class="navbar-nav mr-auto">
+            <!-- These conditionals are super ugly. See
+            https://github.com/shopify/liquid/wiki/liquid-for-designers
+            to figure out a better way to do this.
+            -->
+            {% if page.navbar == "index" %}
+            <li class="nav-item active">
+            {% else %}
+            <li class="nav-item">
+            {% endif %}
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            {% if page.navbar == "about" %}
+            <li class="nav-item active">
+            {% else %}
+            <li class="nav-item">
+            {% endif %}
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            {% if page.navbar == "contact" %}
+            <li class="nav-item active">
+            {% else %}
+            <li class="nav-item">
+            {% endif %}
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            {% if page.navbar == "publications" %}
+            <li class="nav-item active">
+            {% else %}
+            <li class="nav-item">
+            {% endif %}
+              <a class="nav-link" href="./publications.html">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://colin-scott.github.com/">Blog</a>
+            </li>
+            {% if page.navbar == "life" %}
+            <li class="nav-item active">
+            {% else %}
+            <li class="nav-item">
+            {% endif %}
+              <a class="nav-link" href="./life.html">Life</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://colin-scott.github.com/music/">Music</a>
+            </li>
+          </ul>
+        </div> <!-- /navbar-collapse -->
+      </div> <!-- /container -->
+    </nav>
+
+    <div class="container">
+      {{ content }}
+    </div> <!-- /container -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
