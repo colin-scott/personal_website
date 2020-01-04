@@ -1,0 +1,9 @@
+  24637 dschinni.planetlab.extranet.uni-passau.de
+  36338 merkur.planetlab.haw-hamburg.de
+  11065 planet01.hhi.fraunhofer.de
+  20630 planetlab01.cs.washington.edu
+  23434 planetlab1.cs.umass.edu
+  27716 planetlab-3.cmcl.cs.cmu.edu
+  15731 planetlab3.csail.mit.edu
+ 159551 total
+

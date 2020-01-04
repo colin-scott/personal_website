@@ -1,0 +1,36 @@
+(?<clock>.*\}) (?<host>[^:]*): (?<event>.*)
+
+{"raft-member-4" : 1} raft-member-4: Received timer: ChangeConfiguration(StableRaftConfiguration(Set(raft-member-1, raft-member-2, raft-member-3, raft-member-4)))
+{"raft-member-3" : 1} raft-member-3: Received timer: ChangeConfiguration(StableRaftConfiguration(Set(raft-member-1, raft-member-2, raft-member-3, raft-member-4)))
+{"raft-member-2" : 1} raft-member-2: Received timer: ChangeConfiguration(StableRaftConfiguration(Set(raft-member-1, raft-member-2, raft-member-3, raft-member-4)))
+{"raft-member-2" : 2} raft-member-2: Received timer: Timer(election-timer,ElectionTimeout,false,1)
+{"raft-member-2" : 3} raft-member-2: Sending to raft-member-2: BeginElection
+{"raft-member-3" : 2} raft-member-3: Received timer: Timer(election-timer,ElectionTimeout,false,1)
+{"raft-member-3" : 3} raft-member-3: Sending to raft-member-3: BeginElection
+{"raft-member-2" : 4} raft-member-2: Received timer: Timer(election-timer,ElectionTimeout,false,3)
+{"raft-member-2" : 5} raft-member-2: Sending to raft-member-2: BeginElection
+{"raft-member-3" : 4} raft-member-3: Received message from raft-member-3: BeginElection
+{"raft-member-3" : 5} raft-member-3: Sending to raft-member-4: RequestVote(Term(1),Actor[akka://new-system-0/user/raft-member-3#1427067018],Term(0),0)
+{"raft-member-3" : 5, "raft-member-4" : 2} raft-member-4: Received message from raft-member-3: RequestVote(Term(1),Actor[akka://new-system-0/user/raft-member-3#1427067018],Term(0),0)
+{"raft-member-3" : 5, "raft-member-4" : 3} raft-member-4: Sending to raft-member-3: VoteCandidate(Term(0))
+{"raft-member-3" : 6} raft-member-3: Received timer: Timer(election-timer,ElectionTimeout,false,3)
+{"raft-member-3" : 7} raft-member-3: Sending to raft-member-3: BeginElection
+{"raft-member-3" : 8, "raft-member-4" : 3} raft-member-3: Received message from raft-member-4: VoteCandidate(Term(0))
+{"raft-member-3" : 9, "raft-member-4" : 3} raft-member-3: Received message from raft-member-3: BeginElection
+{"raft-member-3" : 10, "raft-member-4" : 3} raft-member-3: Sending to raft-member-4: RequestVote(Term(2),Actor[akka://new-system-0/user/raft-member-3#1427067018],Term(0),0)
+{"raft-member-3" : 10, "raft-member-4" : 4} raft-member-4: Received message from raft-member-3: RequestVote(Term(2),Actor[akka://new-system-0/user/raft-member-3#1427067018],Term(0),0)
+{"raft-member-3" : 10, "raft-member-4" : 5} raft-member-4: Sending to raft-member-3: VoteCandidate(Term(0))
+{"raft-member-1" : 1} raft-member-1: Received timer: ChangeConfiguration(StableRaftConfiguration(Set(raft-member-1, raft-member-2, raft-member-3, raft-member-4)))
+{"raft-member-3" : 11, "raft-member-4" : 5} raft-member-3: Received message from raft-member-4: VoteCandidate(Term(0))
+{"raft-member-2" : 6} raft-member-2: Received message from raft-member-2: BeginElection
+{"raft-member-2" : 7} raft-member-2: Sending to raft-member-1: RequestVote(Term(2),Actor[akka://new-system-0/user/raft-member-2#-694751573],Term(0),0)
+{"raft-member-1" : 2, "raft-member-2" : 7} raft-member-1: Received message from raft-member-2: RequestVote(Term(2),Actor[akka://new-system-0/user/raft-member-2#-694751573],Term(0),0)
+{"raft-member-1" : 3, "raft-member-2" : 7} raft-member-1: Sending to raft-member-2: VoteCandidate(Term(0))
+{"raft-member-1" : 3, "raft-member-2" : 8} raft-member-2: Received message from raft-member-1: VoteCandidate(Term(0))
+{"raft-member-1" : 3, "raft-member-2" : 9} raft-member-2: Received message from raft-member-2: BeginElection
+{"raft-member-1" : 3, "raft-member-2" : 10} raft-member-2: Sending to raft-member-1: RequestVote(Term(2),Actor[akka://new-system-0/user/raft-member-2#-694751573],Term(0),0)
+{"raft-member-1" : 4, "raft-member-2" : 7} raft-member-1: Received timer: Timer(election-timer,ElectionTimeout,false,1)
+{"raft-member-1" : 5, "raft-member-2" : 7} raft-member-1: Received timer: Timer(election-timer,ElectionTimeout,false,3)
+{"raft-member-1" : 6, "raft-member-2" : 10} raft-member-1: Received message from raft-member-2: RequestVote(Term(2),Actor[akka://new-system-0/user/raft-member-2#-694751573],Term(0),0)
+{"raft-member-1" : 7, "raft-member-2" : 10} raft-member-1: Sending to raft-member-2: VoteCandidate(Term(2))
+{"raft-member-1" : 7, "raft-member-2" : 11} raft-member-2: Received message from raft-member-1: VoteCandidate(Term(2))
